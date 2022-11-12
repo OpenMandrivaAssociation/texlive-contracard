@@ -1,13 +1,13 @@
 Name:		texlive-contracard
-Version:	2.0.0
+Version:	50217
 Release:	1
 Summary:	Generate calling cards for dances
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/contracard
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/contracard.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/contracard.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/contracard.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/contracard.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/contracard.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/contracard.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -18,12 +18,12 @@ The class may be used to create calling cards for traditional
 country dances, such as contra and square dances.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -34,7 +34,8 @@ country dances, such as contra and square dances.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
