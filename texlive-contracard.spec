@@ -1,6 +1,6 @@
 Name:		texlive-contracard
-Version:	50217
-Release:	2
+Version:	67201
+Release:	1
 Summary:	Generate calling cards for dances
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/contracard
