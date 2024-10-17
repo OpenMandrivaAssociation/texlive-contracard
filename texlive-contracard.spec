@@ -3,7 +3,7 @@ Version:	67201
 Release:	1
 Summary:	Generate calling cards for dances
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/contracard
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/contracard
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/contracard.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/contracard.doc.r%{version}.tar.xz
